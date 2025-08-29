@@ -18,7 +18,7 @@ public class Calculator {
         int difference = calc.subtract(10, 5);
 
         System.out.println("Addition: " + sum);
-        System.out.println("New Git push");        // Output: Addition: 15
+        System.out.println("New Git push -1");        // Output: Addition: 15
         System.out.println("Subtraction: " + difference); // Output: Subtraction: 5
     }
 }

@@ -28,8 +28,8 @@ public class Calculator {
         int divideResult = calc.divide(10, 5);
 
         System.out.println("Addition result: " + sum);
-        System.out.println("Subtraction : " + difference);
-        System.out.println("Multiplication : " + multiplyResult);
+        System.out.println("Subtraction result: " + difference);
+        System.out.println("Multiplication result: " + multiplyResult);
         System.out.println("Division : " + divideResult);
     
     }

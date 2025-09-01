@@ -1,23 +1,36 @@
 public class Calculator {
 
-    // Method to add two numbers
     public int add(int a, int b) {
         return a + b;
     }
 
-    // Method to subtract two numbers
     public int subtract(int a, int b) {
         return a - b;
     }
 
-    // Main method to test add and subtract methods
+    public int multiply(int a, int b) {
+        return a * b;
+    }   
+
+    public int divide(int a, int b) {
+        if (b == 0) {
+            throw new IllegalArgumentException("Division by zero is not allowed.");
+        }
+        return a / b;
+    }
+
     public static void main(String[] args) {
         Calculator calc = new Calculator();
 
         int sum = calc.add(10, 5);
         int difference = calc.subtract(10, 5);
+        int multiplyResult = calc.multiply(10, 5);
+        int divideResult = calc.divide(10, 5);
 
-        System.out.println("Addition result: " + sum);       // Output: Addition: 15
-        System.out.println("Subtraction : " + difference); // Output: Subtraction: 5
+        System.out.println("Addition result: " + sum);
+        System.out.println("Subtraction : " + difference);
+        System.out.println("Multiplication : " + multiplyResult);
+        System.out.println("Division : " + divideResult);
+    
     }
 }
